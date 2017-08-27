@@ -1,1 +1,1 @@
-# fac-2017.2
+#Repositorio dedicado a disciplina de Fundamentos de Arquiteturas de Computadores
