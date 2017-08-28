@@ -15,7 +15,6 @@ CartesianPoint readPoint(double x , double y ){
 void showResult(Circle circle){
   printf("Raio: %.3lf\n",circle.radius );
   printf("Centro: (%.3lf, %.3lf).\n",circle.point.x, circle.point.x);
-
 }
 
 void notAcircleMessage(){
@@ -24,5 +23,5 @@ void notAcircleMessage(){
 
 void menu(){
   printf(">>>>>>>>>>>>>>Menu<<<<<<<<<<<<\n");
-  printf("Insira 3 pontos desejados\n");
+  printf("\tInsira 3 pontos desejados\n");
 }

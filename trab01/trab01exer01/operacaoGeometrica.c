@@ -13,7 +13,7 @@ double distanceBetweenPoints(CartesianPoint a, CartesianPoint b){
   return distance;
 }
 
-void getPointsHypotenuse(CartesianPoint * points, CartesianPoint *poinsHypotenuse){
+void getPointsHypotenuse(CartesianPoint * points, CartesianPoint *pointsHypotenuse){
   double distances[3];
   distances[0] = distanceBetweenPoints(points[0],points[1]);
   distances[1] = distanceBetweenPoints(points[0],points[2]);
@@ -29,14 +29,14 @@ void getPointsHypotenuse(CartesianPoint * points, CartesianPoint *poinsHypotenus
     }
 
     if(hypotenuse == distanceBetweenPoints(points[0],points[1])){
-      poinsHypotenuse[0] = points[0];
-      poinsHypotenuse[1] =  points[1];
+      pointsHypotenuse[0] = points[0];
+      pointsHypotenuse[1] =  points[1];
     }else if (hypotenuse == distanceBetweenPoints(points[0],points[2])){
-      poinsHypotenuse[0] = points[0];
-      poinsHypotenuse[1] =  points[2];
+      pointsHypotenuse[0] = points[0];
+      pointsHypotenuse[1] =  points[2];
     }else{
-      poinsHypotenuse[0] = points[2];
-      poinsHypotenuse[1] =  points[1];
+      pointsHypotenuse[0] = points[2];
+      pointsHypotenuse[1] =  points[1];
     }
 }
 
